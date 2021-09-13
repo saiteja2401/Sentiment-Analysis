@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <style>
+            
+            div.content_text {text-align: center;}
+            div.translate{
+                text-align: center;
+            }
+            div.main{
+                margin-left: 10%;
+            }
+            img.image {
+                        display: inline;
+                        margin-left: 42%;
+                        margin-right: auto;
+                        width: 16%;
+                        height: 20%;
+                        align-content: center;
+                        text-align: center;
+                        }
+            body {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: rgb(255, 255, 255);
+            }
+            h2{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: rgb(16, 24, 26);
+            }
+            p{
+                display: inline;
+            }
+            div.home{
+                display: inline;
+            }
+            textarea.result{
+                display: inline;
+                margin-left: 12%;
+                text-align: left;
+                
+            }
+            textarea.textarea1{
+                align-items: center;
+                align-content: center;
+                margin-left: 25%;
+                display: inline;
+            }
+            button.submit{
+                display: inline;
+                width: 10%;
+                border: none;
+                background-color: #04AA6D;
+                color: white;
+                padding: 10px 10px;
+                font-size: 16px;
+                cursor: pointer;
+                text-align: center;
+                margin-left: 2%;
+                
+            }
+
+            button.submit:hover {
+            background-color: #ddd;
+            color: black;
+            }
+            ol.list{
+                margin-left:23%;
+                font-size: 18;
+            }
+            p.def{
+                margin-left:24.8%; 
+                display: block;
+                font-size: 18;  
+            }
+            section.editable{
+                display: inline;
+            }
+            div.content_text{
+                margin-top: 20%;
+            }
+        </style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <title>Dictionary</title>
+    
+    <body >
+        
+        <img class = "image" src="https://blog.reputationx.com/hubfs/sentiment%20analysis%20%281%29.jpg" alt="word-counter" width="120" height="150"><br><br>
+        <div class="Home">
+            <h2 style="text-align: center;">Sentiment Analysis</h2><br>
+            <form action="/", method = "post">
+                <div class="main">
+                
+                    <textarea class ="textarea1" rows="5" cols="70" name="paragraph" placeholder="Type or paste">{{input}}</textarea>
+                    <button style="align-content: center;" class = "submit" type="submit">Find</button>
+                    <section class = "editable" contenteditable="true">
+                            <p class = "def">{{f_result}}</p> 
+                    </section>
+                </div>
+
+            </form>
+        </div>
+        <br>
+        <div class="content_text">
+            <p style="text-align: center;">Enter (by typing directly or using copy paste) your text and find out how many words and characters it contains.</p>
+        </div>
+    </div>
+                
+    </body>
+</html>
